@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.le.stock.stockdemo.mychart.MyCombinedChart
+        android:id="@+id/combinedchart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="2"></com.le.stock.stockdemo.mychart.MyCombinedChart>
+
+    <com.le.stock.stockdemo.mychart.MyCombinedChart
+        android:id="@+id/bottemcombinedchart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"></com.le.stock.stockdemo.mychart.MyCombinedChart>
+    <com.le.stock.stockdemo.view.SmartTabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/indicatrix_smart_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/jrmetal_top"
+        app:stl_defaultTabTextColor="#666666"
+        app:stl_defaultTabTextSize="16sp"
+        app:stl_indicatorColor="#00000000"
+        app:stl_indicatorCornerRadius="1.5dp"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="2dp"
+        app:stl_indicatorWithoutPadding="true"
+        app:stl_underlineColor="#00000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ma"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="boll"
+            android:layout_weight="1"  android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kdj"
+            android:layout_weight="1"  android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="obv"
+            android:layout_weight="1"  android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rsi"
+            android:layout_weight="1"  android:gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

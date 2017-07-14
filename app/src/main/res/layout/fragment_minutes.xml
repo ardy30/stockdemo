@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_weight="1">
+        <com.le.stock.stockdemo.mychart.MyLineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+        </com.le.stock.stockdemo.mychart.MyLineChart>
+
+
+        <com.le.stock.stockdemo.mychart.MyBarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.le.stock.stockdemo.mychart.MyBarChart>
+    </LinearLayout>
+
+    <include
+        layout="@layout/gold_deal_intime_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_marginRight="5dp"
+        />
+
+</LinearLayout>
